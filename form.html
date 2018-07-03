@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>表单</title>
+		<meta charset="utf-8"/>
+	</head>
+	<body>
+		<form action="" method="">
+			<h2>修改个人信息</h2>
+			<table width="500">
+				<tr>
+					<td width="70" height="35">姓名：</td>
+					<td width="180"><input type="text" value="mary"/></td>
+				</tr>
+				<tr>
+					<td height="35">性别：</td>
+					<td width="180">
+						<input type="radio" id="rexFemal" name="sex" checked/>
+						<label for="female">女士</label>
+						<input type="radio" id="rexMal" name="sex"/>
+						<label for="rexMal">男士</label>
+				</tr>
+				<tr>
+					<td height="35">学历：</td>
+					<td >
+						<select>
+							<option>其他</option>
+							<option>专科</option>
+							<option>本科</option>
+							<option>硕士及以上</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>个人描述：</td>
+					<td width="280">
+						<textarea cols="30" rows="5"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td height="35"></td>
+					<td>
+						<input type="checkbox" id="chkPublic"/>
+						<label for="chekPublic">不要公开我的信息</label>
+					</td>
+	            </tr>
+	            <tr>
+	            	<td height="35"></td>
+            		<td>
+            			<input type="submit" value="保存"/>
+            			<input type="reset" value="慎重"/>
+            		</td>
+	            </tr>
+			</table>
+		</form>
+		
+	</body>
+</html>

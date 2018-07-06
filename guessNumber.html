@@ -1,0 +1,42 @@
+<!doctype html PUBLIC "-//w3c//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>
+		    猜数字
+		</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+		<script type="text/javascript" src="guessNumber.js" language="javascript"></script>
+	</head>
+	<body>
+	    <form>
+			<h2>2.猜数字</h2>
+			请录入猜测的数组（1-20之间的整数）:<br/>
+			<input id= "txtNumber" type ="text" onblur="guessNumber();"/>
+			
+			<h2>4. 控制语句:求阶乘</h2>
+			<input type ="button" value="求10的阶乘" onclick="getFac();" />
+			<h2>5.String 对象: 字符的查找与过滤</h2>
+			<input type="text" id="txtString"/><br/>
+			<input type="button" value="过滤特殊字符（js）" onclick="searchStringAndReplace();" />
+			<input type="button" value="查找字符并过滤（使用正则表达式）" onclick="stringByRegex();" />
+			
+			<h2>6.Array 对象：倒转、文本与数值的排序</h2>
+			<input type= "text" id="txtNumbers" value ="12,4,3,123,51" style="font-size:13pt;"/>
+			<input type ="button" value="数组倒转" onclick= "operateArray(1);"/>
+			<input type="button" value="数组排序（文本）" onclick="operateArray(2);" /><br/>
+			<input type="button" value="数组排序（数值）" onclick="operateArray(3);"/>
+			
+			<h2>7.Math对象:随机数生成器</h2>
+			最小值：<input type="text" id="txtMin" /><br/>
+			最大值:<input type="text" id="txtMax" /><br/>
+			<input type="button" value="得到随机数" onclick="getRandomNumber();" />
+			
+			<h2>8.Number 对象：计算资产的折旧</h2>
+			录入资产采购时的价值：<input type="text" id="txtPrice" value="1000" /><br/>
+			录入折旧率:<input id = "txtRate" type="text" value="0.15" /><br/>
+			录入计算年限:<input id="txtYear" type="text" value="5" /><br/>
+			<input type="button" value="计算" onclick="calculateDepreciation();"/><br/>
+			<textarea id="txtResult" rows="7" cols="50"></textarea>
+		</form>
+	</body>
+</html>
